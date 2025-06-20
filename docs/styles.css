@@ -1,0 +1,14 @@
+.projects-container {
+    display: grid;
+    gap: 1rem;
+    
+    /* 
+        https://developer.mozilla.org/en-US/docs/Glossary/Grid
+        https://stackoverflow.com/questions/43129360/css-grid-wrapping
+     */
+    grid-template-columns: repeat(
+        /* Repeat the number of columns based on if the available space and minimum width for each column */
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+}
