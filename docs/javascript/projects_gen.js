@@ -95,4 +95,19 @@ function loadProjects() {
 }
 
 // Call loadProjects after the DOM is fully loaded - to ensure the container exists before trying to append children
-document.addEventListener("DOMContentLoaded", loadProjects);
+document.addEventListener("DOMContentLoaded", () => {
+    loadProjects();
+
+    const btn = document.getElementById("show-all-projects");
+    const container = document.getElementById("projects-container");
+    const fade = document.querySelector(".projects-fade");
+    btn.addEventListener("click", () => {
+        container.classList.toggle("expanded");
+        fade.classList.toggle("hidden");
+        if (container.classList.contains("expanded")) {
+            btn.textContent = "Skrýt projekty";
+        } else {
+            btn.textContent = "Zobrazit vše";
+        }
+    });
+});
