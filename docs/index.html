@@ -12,56 +12,75 @@
 </head>
 <body>
 
-    <div>
-        <h1>Petr Plíhal</h1>
-    
-        <div class="topnav" id="myTopnav">
-            <a href="#about-me-section">O mně</a>
-            <a href="#projects-section">Projekty</a>
-            <a href="#certificates-section">Certifikáty</a>
-            <a href="#contacts-section">Kontakt</a>
+    <div class="container">
+
+        <header class="py-3">
+            <h1>Petr Plíhal</h1>
+        
+            <nav class="navbar navbar-expand-sm bg-body-tertiary">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me-section">O mně</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects-section">Projekty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certificates-section">Certifikace</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts-section">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- TODO: add links to projects, or consider changing the text -->
+        <main>
+            <h2 class="about-me-section" id="about-me-section">O mně</h2>
+            <p>Softwarový vývojář s týmovým duchem a nadšením učit se nové věci. Rád spolupracuji v týmu (Týmové projekty), nejsou mi cizí web-development (Informační systém), menší desktop aplikace (Kalkulačka), vestavěné systémy (Wifi metronom), a ani nízkoúrovňové síťové aplikace (L4 port scanner, Klient pro chat).</p>
+        </main>
+
+        <div class="projects-section">
+            <h2>Projekty</h2>
+            <div class="projects-container limited" id="projects-container">
+
+                <div class="projects-fade"></div>
+            </div>
+            <button id="show-all-projects">Zobrazit vše</button>
         </div>
+
+        <script src="javascript/projects_gen.js"></script>
+        
+        <h2 class="certificates-section" id="certificates-section">Certifikáty</h2>
+            <a class="certificate" target="_blank" href="https://www.cambridgeenglish.org/images/177867-the-methodology-behind-the-cambridge-english-scale.pdf">
+                Angličtina úroveň C2 - Cambridge University English
+            </a> <br>
+
+            <a class="certificate" target="_blank" href="https://www.globalknowledge.com/en-qa/certifications/certification-training/cisco/cisco-routing-and-switching/cisco-ccna-routing-and-switching">
+                <abbr title="Cisco Certified Network Associate">CCNA</abbr> - Routing And Switching
+            </a> <br>
+
+            <a class="certificate" target="_blank" href="https://www.ecdl.cz/cert_ecdl.php">
+                <abbr title="European Computer Driving Licence">ECDL</abbr> - CORE
+            </a>
+        
+
+
+        <!-- <h2>Vzdělání</h2> -->
+        <!-- <h2>Pracovní zkušenosti</h2> -->
+
+        <h2 class="contacts-section" id="contacts-section">Kontakt</h2>
+            <a target="_blank" href="https://www.linkedin.com/in/petr-pl%C3%ADhal">LinkedIn</a>
+            <a target="_blank" href="https://github.com/petr-plihal">GitHub</a>
+            <a target="_blank" href="https://www.facebook.com/petr.plihal.758/">Facebook</a>
+
     </div>
-
-    <!-- TODO: add links to projects, or consider changing the text -->
-    <h2 class="about-me-section" id="about-me-section">O mně</h2>
-    <p>Softwarový vývojář s týmovým duchem a nadšením učit se nové věci. Rád spolupracuji v týmu (Týmové projekty), nejsou mi cizí web-development (Informační systém), menší desktop aplikace (Kalkulačka), vestavěné systémy (Wifi metronom), a ani nízkoúrovňové síťové aplikace (L4 port scanner, Klient pro chat).</p>
-
-    <div class="projects-section">
-        <h2>Projekty</h2>
-        <div class="projects-container limited" id="projects-container">
-
-            <div class="projects-fade"></div>
-        </div>
-        <button id="show-all-projects">Zobrazit vše</button>
-    </div>
-
-    <script src="javascript/projects_gen.js"></script>
-    
-    <h2 class="certificates-section" id="certificates-section">Certifikáty</h2>
-        <a class="certificate" target="_blank" href="https://www.cambridgeenglish.org/images/177867-the-methodology-behind-the-cambridge-english-scale.pdf">
-            Angličtina úroveň C2 - Cambridge University English
-        </a> <br>
-
-        <a class="certificate" target="_blank" href="https://www.globalknowledge.com/en-qa/certifications/certification-training/cisco/cisco-routing-and-switching/cisco-ccna-routing-and-switching">
-            Základní znalost počítačových sítí - CCNA (Cisco Certified Network Associate) - Routing And Switching
-        </a> <br>
-
-        <a class="certificate" target="_blank" href="https://www.ecdl.cz/cert_ecdl.php">
-            Digitální gramotnost - ECDL (European Computer Driving Licence) - CORE
-        </a>
-    
-
-
-    <!-- <h2>Vzdělání</h2> -->
-    <!-- <h2>Pracovní zkušenosti</h2> -->
-
-    <h2 class="contacts-section" id="contacts-section">Kontakt</h2>
-        <a target="_blank" href="https://www.linkedin.com/in/petr-pl%C3%ADhal">LinkedIn</a>
-        <a target="_blank" href="https://github.com/petr-plihal">GitHub</a>
-        <a target="_blank" href="https://www.facebook.com/petr.plihal.758/">Facebook</a>
-
-
 
 </body>
 </html>
