@@ -21,16 +21,33 @@ The hosting is done with [GitHub Pages](https://pages.github.com/) using my owne
 
 ### Setup
 
+The setup is only meant for setting up different web but with same dependencies. 
+Since I just copied all necessary Bootstrap files into the `docs/bootstrap/` directory, no extra setup is needed, outside of cloning the repository.
+The following lines serve more as a track of the changes made for the web to work correctly.
+
 1. Clone the repository
-```bash
-git clone git@github.com:petr-plihal/personal-web.git
-cd personal-web
-```
+   ```bash
+   git clone git@github.com:petr-plihal/personal-web.git
+   cd personal-web
+   ```
 
 2. Install dependencies
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
+
+3. Copy necessary generated Bootstrap files.
+
+    1. CSS and JavaScript files
+       ```bash
+       cp node_modules/bootstrap/dist/css/bootstrap.min.css docs/bootstrap/css/
+       cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js docs/bootstrap/js/
+       ```
+    2. Icons
+       ```bash
+       cp node_modules/bootstrap-icons/font/bootstrap-icons.min.css docs/bootstrap/icons/
+       cp -r node_modules/bootstrap-icons/font/fonts docs/bootstrap/icons/
+       ```
 
 ---
 
