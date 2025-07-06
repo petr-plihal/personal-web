@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    
+
     <title>Petr Plíhal</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/projects.css"> 
-    <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -33,39 +33,43 @@
         <meta name="apple-mobile-web-app-title" content="Petr Plíhal" />
         <link rel="manifest" href="/media/icons/favicon/site.webmanifest" />
     <!-- Generated icons -->
-     
+
 </head>
 <body>
-<div class="container pb-5">
+<div class="container pb-5" data-bs-spy="scroll" data-bs-target="#mainNavbar">
 
-    <header class="py-3">
-        <h1>Petr Plíhal</h1>
-    
-        <nav class="navbar navbar-expand bg-body-tertiary">
+    <div><header>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top" id="mainNavbar">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-me-section">O mně</a>
+                        <a class="nav-link" href="#home-section">
+                            <i class="bi bi-house"></i>
+                            <!-- <span class="nav-text">Domů</span> -->
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#technologies-section">Technologie</a>
+                        <a class="nav-link" href="#about-me-section"><i class="bi bi-person-circle"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects-section">Projekty</a>
+                        <a class="nav-link" href="#technologies-section"><i class="bi bi-wrench-adjustable-circle-fill"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#certificates-section">Certifikace</a>
+                        <a class="nav-link" href="#projects-section"><i class="bi bi-gear-fill"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacts-section">Kontakt</a>
+                        <a class="nav-link" href="#certificates-section"><i class="bi bi-award"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts-section"><i class="bi bi-envelope"></i></a>
                     </li>
                 </ul>
             </div>
         </nav>
-    </header>
+    </div></header>
 
 <main>
 
@@ -144,24 +148,24 @@
 
     <div class="section" id="certificates-section">
         <h2>Certifikáty</h2>
-        <p>
-            Angličtina úroveň C2 - Cambridge University English - 
-            <a class="certificate" target="_blank" href="https://www.cambridgeenglish.org/images/177867-the-methodology-behind-the-cambridge-english-scale.pdf">
-                přehled úrovní
-            </a>
-        </p>
-        <p>
-            <abbr title="Cisco Certified Network Associate">CCNA</abbr> - Routing And Switching - 
-            <a class="certificate" target="_blank" href="https://www.globalknowledge.com/en-qa/certifications/certification-training/cisco/cisco-routing-and-switching/cisco-ccna-routing-and-switching">
-                přehled certifikace
-            </a>
-        </p>
-        <p>
-            <abbr title="European Computer Driving Licence">ECDL</abbr> - CORE - 
-            <a class="certificate" target="_blank" href="https://www.ecdl.cz/cert_ecdl.php">
-                přehled certifikace
-            </a>
-        </p>
+            <p>
+                Angličtina úroveň C2 - Cambridge University English - 
+                <a class="certificate" target="_blank" href="https://www.cambridgeenglish.org/images/177867-the-methodology-behind-the-cambridge-english-scale.pdf">
+                    přehled úrovní
+                </a>
+            </p>
+            <p>
+                <abbr title="Cisco Certified Network Associate">CCNA</abbr> - Routing And Switching - 
+                <a class="certificate" target="_blank" href="https://www.globalknowledge.com/en-qa/certifications/certification-training/cisco/cisco-routing-and-switching/cisco-ccna-routing-and-switching">
+                    přehled certifikace
+                </a>
+            </p>
+            <p>
+                <abbr title="European Computer Driving Licence">ECDL</abbr> - CORE - 
+                <a class="certificate" target="_blank" href="https://www.ecdl.cz/cert_ecdl.php">
+                    přehled certifikace
+                </a>
+            </p>
         
     </div>
         
@@ -170,10 +174,10 @@
     <!-- <h2>Pracovní zkušenosti</h2> -->
 
     <div class="section" id="contacts-section">
-    <h2 class="contacts-section" id="contacts-section">Kontakt</h2>
-        <a target="_blank" href="https://www.linkedin.com/in/petr-plihal">LinkedIn</a>
-        <a target="_blank" href="https://github.com/petr-plihal">GitHub</a>
-        <a target="_blank" href="https://www.facebook.com/petr.plihal.758/">Facebook</a>
+        <h2 class="contacts-section" id="contacts-section">Kontakt</h2>
+            <a target="_blank" href="https://www.linkedin.com/in/petr-plihal">LinkedIn</a>
+            <a target="_blank" href="https://github.com/petr-plihal">GitHub</a>
+            <a target="_blank" href="https://www.facebook.com/petr.plihal.758/">Facebook</a>
     </div>
 </main>
 </div>
