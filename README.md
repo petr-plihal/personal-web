@@ -17,7 +17,8 @@ The hosting is done with [GitHub Pages](https://pages.github.com/) using my owne
 
 ### Dependencies and prerequisites
 
-- `npm` package manager
+- `npm` package manager - for generating Bootstrap files
+- Python - for virtual environment and Pelican
 
 ### Setup
 
@@ -32,8 +33,17 @@ The following lines serve more as a track of the changes made for the web to wor
    ```
 
 2. Install dependencies
+
+   Install npm packages:
    ```bash
    npm install
+   ```
+
+   Create and activate virtual environment and install packages:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
    ```
 
 3. Copy necessary generated Bootstrap files.
