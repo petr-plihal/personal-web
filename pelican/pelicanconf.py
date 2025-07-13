@@ -30,6 +30,20 @@ SOCIAL = (
 )
 
 DEFAULT_PAGINATION = False
+# Multilingual support
+I18N_SUBSITES = {
+    'cs': {
+        'SITENAME': 'Petr Plíhal',
+        'LOCALE': 'cs_CZ.UTF-8',
+    }
+}
+
+# Plugin for i18n_subsites (might be useful later)
+# PLUGINS = ['i18n_subsites']
+
+# Language URL patterns
+PAGE_LANG_URL = '{lang}/pages/{slug}.html'
+PAGE_LANG_SAVE_AS = '{lang}/pages/{slug}.html'
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
