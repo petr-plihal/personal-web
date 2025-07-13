@@ -30,6 +30,24 @@ SOCIAL = (
 )
 
 DEFAULT_PAGINATION = False
+
+# Disable generation of unnecessary files
+DIRECT_TEMPLATES = ['index']  # Only generate index.html
+PAGINATED_TEMPLATES = {}      # No pagination
+
+# Disable article-related pages since you're not using articles yet
+ARTICLE_SAVE_AS = ''
+ARTICLE_URL = ''
+DRAFT_SAVE_AS = ''
+DRAFT_URL = ''
+AUTHOR_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+TAG_SAVE_AS = ''
+ARCHIVES_SAVE_AS = ''
+AUTHORS_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+TAGS_SAVE_AS = ''
+
 # Multilingual support
 I18N_SUBSITES = {
     'cs': {
