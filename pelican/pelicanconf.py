@@ -61,16 +61,15 @@ AUTHORS_SAVE_AS = ''
 CATEGORIES_SAVE_AS = ''
 TAGS_SAVE_AS = ''
 
-# Multilingual support
-I18N_SUBSITES = {
-    'cs': {
-        'SITENAME': 'Petr Plíhal',
-        'LOCALE': 'cs_CZ.UTF-8',
-    }
+# Multilingual support - using Pelican's built-in features
+DEFAULT_LANG = 'en'
+
+# Available languages  
+LANGUAGES = {
+    'en': 'English',
+    'cs': 'Čeština'
 }
 
-# Plugin for i18n_subsites (might be useful later)
-# PLUGINS = ['i18n_subsites']
 
 # Language URL patterns
 PAGE_LANG_URL = '{lang}/pages/{slug}.html'
