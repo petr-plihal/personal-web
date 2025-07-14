@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <header class="section" id="home-section">
+        <h1>{{ page.title }}</h1>
+    </header>
+    
+    <div class="section">
+        {{ page.content }}
+    </div>
+    
+    <!-- Language switcher for individual pages -->
+    {% if page.translations %}
+        <div class="section">
+            <h6>Also available in:</h6>
+            {% for translation in page.translations %}
+                <a href="{{ SITEURL }}/{{ translation.url }}" class="btn btn-outline-secondary btn-sm">
+                    {% if translation.lang == 'cs' %}Čeština{% else %}{{ translation.lang }}{% endif %}
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

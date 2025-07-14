@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+
+<head>
+
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/bootstrap/icons/bootstrap-icons.min.css">
+        <script src="{{ SITEURL }}/theme/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    
+    <!-- CSS -->
+        <!-- <link rel="stylesheet" href="{{ SITEURL }}/theme/styles/debug.css"> -->
+        {% block css %}{% endblock %}
+    <!-- CSS -->
+
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWF3EXGP99"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date()); 
+            
+            gtag('config', 'G-QWF3EXGP99');
+        </script>
+    <!-- Google tag (gtag.js) -->
+
+    <!-- Favicons -->
+        <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/media/icons/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="{{ SITEURL }}/theme/media/icons/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="{{ SITEURL }}/theme/media/icons/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/media/icons/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Petr Plíhal" />
+        <link rel="manifest" href="{{ SITEURL }}/theme/media/icons/favicon/site.webmanifest" />
+    <!-- Favicons -->
+
+</head>
+
+<body>
+    {% block navbar %}{% endblock %}
+    <main class="container pb-5" data-bs-spy="scroll" data-bs-target="#mainNavbar">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
