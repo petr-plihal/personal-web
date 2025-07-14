@@ -34,6 +34,16 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = False
 
+# ! Delete contents before generating, to avoid older unused files from persisting
+DELETE_OUTPUT_DIRECTORY = True
+
+# Include special files
+STATIC_PATHS = ['extra/CNAME', 'extra/favicon.svg']
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/favicon.svg': {'path': 'favicon.svg'}
+}
+
 # Disable generation of unnecessary files
 DIRECT_TEMPLATES = ['index']  # Only generate index.html
 PAGINATED_TEMPLATES = {}      # No pagination
