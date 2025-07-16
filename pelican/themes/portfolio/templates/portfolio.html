@@ -40,6 +40,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contacts-section"><i class="bi bi-envelope"></i></a>
                 </li>
+
+                <!-- Language switcher -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        {{ language|upper }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{ SITEURL }}/">EN</a></li>
+                        <li><a class="dropdown-item" href="{{ SITEURL }}/index-cs.html">CS</a></li>
+                    </ul>
+                </li>
+                <!-- Language switcher -->
+
             </ul>
         </div>
     </nav>

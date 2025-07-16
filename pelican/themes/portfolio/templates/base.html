@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}">
+<html lang="{% if language is not defined %}{% set language = DEFAULT_LANG %}{% endif %}{{ language }}">
 
 <head>
 

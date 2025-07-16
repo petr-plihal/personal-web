@@ -45,7 +45,7 @@ EXTRA_PATH_METADATA = {
 }
 
 # Disable generation of unnecessary files
-DIRECT_TEMPLATES = ['index']  # Only generate index.html
+DIRECT_TEMPLATES = ['index', 'index-cs']  # Only generate index.html
 PAGINATED_TEMPLATES = {}      # No pagination
 
 # Disable article-related pages since you're not using articles yet
