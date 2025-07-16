@@ -1,3 +1,102 @@
 {% extends "portfolio.html" %}
 
 {% set language = "en" %}
+
+{# About me section #}
+{% block about_me_section_content %}
+        <h2>About Me</h2>
+        <h6>Professionally</h6>
+        <p>
+            I'm a Junior Software Developer who enjoys working on anything that makes sense and has real value.
+            I'm not afraid of new challenges and I like learning new technologies and approaches.
+            I've been involved in computer science for <span class="study-years"></span> years, during which I've built a technical foundation - both through studying at the Faculty of Information Technology at BUT in Brno and creating my own projects, including team collaboration.
+        </p>
+        <h6>Personally</h6>
+        <p>
+            I'm a tech enthusiast through and through - I've always enjoyed creating new things and improving them.
+            Whether it was drawings, Lego models, video games, or later software, I enjoy creating and finding ways to improve what I do.
+            Since elementary school, I knew I wanted to combine technology and creativity - that's why I decided to pursue IT.
+        </p>
+        <p>
+            When creating (whether SW projects or amateur woodworking), I believe in the importance of good planning and design.
+            I think the question "why?" or "what for?" is as important as "how?".
+        </p>
+{% endblock about_me_section_content %}
+
+{# Technologies section #}
+{% block technologies_section_content %}
+        <h2>Technologies and Tools</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <u>I have the most practical experience with: </u>
+                    <ul>
+                        <li>Web applications (<b>Flask, Bootstrap, HTML+CSS</b>)</li>
+                        <li>Databases (<b>SQL - MySQL</b>) </li>
+                        <li>Mini desktop applications and scripts (<b>Tkinter, Python</b>)</li>
+                        <li>Network and low-level applications (<b>C/C++</b>)</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <u>I also use other supporting tools for development:</u>
+                    <ul>
+                        <li><b>Git & GitHub</b></li>
+                        <li><b>Docker</b></li>
+                        <li><b>Linux (CLI - WSL)</b></li>
+                        <li><b>VSCode</b></li>
+                        <li><b>Latex, Doxygen</b></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <u>I also have some practical experience with:</u>
+                    <ul>
+                        <li>Web frameworks - (<b>Django, Vue.js</b>)</li>
+                        <li>Testing (<b>Pytest, Unit tests</b>)</li>
+                        <li>Embedded systems development (<b>Arduino, ESP32</b>)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+{% endblock technologies_section_content %}
+
+{# Projects section #}
+{% block projects_section_content %}
+        <h2>Projects</h2>
+        <div class="projects-container limited" id="projects-container">
+
+            <div class="projects-fade"></div>
+        </div>
+        <button id="show-all-projects">Show All</button>
+{% endblock projects_section_content %}
+
+{# Certificates section #}
+{% block certificates_section_content %}
+        <h2>Certificates</h2>
+            <p>
+                English level C2 - Cambridge University English - 
+                <a class="certificate" target="_blank" href="https://www.cambridgeenglish.org/images/177867-the-methodology-behind-the-cambridge-english-scale.pdf">
+                    level overview
+                </a>
+            </p>
+            <p>
+                <abbr title="Cisco Certified Network Associate">CCNA</abbr> - Routing And Switching - 
+                <a class="certificate" target="_blank" href="https://www.globalknowledge.com/en-qa/certifications/certification-training/cisco/cisco-routing-and-switching/cisco-ccna-routing-and-switching">
+                    certification overview
+                </a>
+            </p>
+            <p>
+                <abbr title="European Computer Driving Licence">ECDL</abbr> - CORE - 
+                <a class="certificate" target="_blank" href="https://en.wikipedia.org/wiki/International_Certification_of_Digital_Literacy">
+                    certification overview
+                </a>
+            </p>
+{% endblock certificates_section_content %}
+
+{# Contacts section #}
+{% block contacts_section_content %}
+        <h2 class="contacts-section" id="contacts-section">Contact</h2>
+            <a target="_blank" href="mailto:petaplihal@seznam.cz">E-mail</a>
+            <a target="_blank" href="https://www.linkedin.com/in/petr-plihal">LinkedIn</a>
+            <a target="_blank" href="https://github.com/petr-plihal">GitHub</a>
+            <a target="_blank" href="https://www.facebook.com/petr.plihal.758/">Facebook</a>
+{% endblock contacts_section_content %}
