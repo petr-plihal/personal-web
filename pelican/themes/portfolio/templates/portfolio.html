@@ -65,6 +65,10 @@
         <p itemprop="jobTitle">Junior Software Developer</p>
         <meta itemprop="url" content="https://peta-plihal.eu">
         <meta itemprop="nationality" content="Czech Republic">
+        <!-- <embed src="plihal_petr_cv_en.pdf"/> -->
+        {% if language is defined and download_cv_text is defined %}
+            <a href="plihal_petr_cv_{{ language }}.pdf" download>{{ download_cv_text }}</a>
+        {% endif %}
     </header>
 
     <div class="section" id="about-me-section">
