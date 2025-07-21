@@ -16,3 +16,28 @@
 .nav-link:hover .bi {
     color: #0056b3;
 }
+
+
+/* Navigation item layout */
+/* Desktop - text under icons */
+@media (min-width: 576px) {
+    .nav-link {
+        flex-direction: column;
+    }
+    
+    .nav-text {
+        font-size: 0.8rem;
+        margin-top: 2px;
+    }
+}
+
+/* Mobile - text next to icons */
+@media (max-width: 575px) {
+    .nav-link {
+        flex-direction: row;
+    }
+    
+    .nav-text {
+        margin-left: 8px;
+    }
+}
