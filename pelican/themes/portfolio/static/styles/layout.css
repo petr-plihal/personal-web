@@ -1,4 +1,9 @@
+/* Initial values */
+:root {
+    --navbar-height: 80px; /* Fallback value, in case `navbar_height.js` */
+}
+
 .section {
     min-height: 100vh; /* Each section must take up at least the viewport height */
-    scroll-margin-top: 80px; /* Offset for fixed navbar TODO: no absolute values */
+    scroll-margin-top: var(--navbar-height); /* Offset for fixed navbar, calculated in `navbar_height.js` */
 }
