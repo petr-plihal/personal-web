@@ -22,29 +22,44 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#home-section">
                         <i class="bi bi-house"></i>
-                        <!-- <span class="nav-text">Domů</span> -->
+                        <span class="nav-text">{{ sections_titles["home"] }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-me-section"><i class="bi bi-person-circle"></i></a>
+                    <a class="nav-link" href="#about-me-section">
+                        <i class="bi bi-person-circle"></i>
+                        <span class="nav-text">{{ sections_titles["about"] }}</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#technologies-section"><i class="bi bi-wrench-adjustable-circle-fill"></i></a>
+                    <a class="nav-link" href="#technologies-section">
+                        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+                        <span class="nav-text">{{ sections_titles["technologies"] }}</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects-section"><i class="bi bi-gear-fill"></i></a>
+                    <a class="nav-link" href="#projects-section">
+                        <i class="bi bi-gear-fill"></i>
+                        <span class="nav-text">{{ sections_titles["projects"] }}</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#certificates-section"><i class="bi bi-award"></i></a>
+                    <a class="nav-link" href="#certificates-section">
+                        <i class="bi bi-award"></i>
+                        <span class="nav-text">{{ sections_titles["certificates"] }}</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacts-section"><i class="bi bi-envelope"></i></a>
+                    <a class="nav-link" href="#contacts-section">
+                        <i class="bi bi-envelope"></i>
+                        <span class="nav-text">{{ sections_titles["contacts"] }}</span>
+                    </a>
                 </li>
 
                 <!-- Language switcher -->
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" id="navbar-language-switcher">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        {{ language|upper }}
+                        <span class="nav-text">{{ language|upper }}</span>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{ SITEURL }}/">EN</a></li>
