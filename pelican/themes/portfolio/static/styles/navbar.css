@@ -1,3 +1,8 @@
+/* Navbar */
+.navbar {
+    padding: 0.5rem 1rem; /* Top/bottom: 0.5rem, Left/right: 1rem */
+}
+
 /* Navigation links */
 
 .nav-link {
@@ -49,5 +54,8 @@
 @media (max-width: 575px) {
     .nav-link {
         flex-direction: row;
+    }
+    .nav-text {
+        margin-left: 8px;
     }
 }
