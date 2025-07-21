@@ -1,4 +1,0 @@
-.section {
-    min-height: 100vh; /* Each section must take up at least the viewport height */
-    scroll-margin-top: 80px; /* Offset for fixed navbar TODO: no absolute values */
-}
