@@ -21,61 +21,27 @@
 }) %}
 
 {# About me section #}
-{% block about_me_section_content %}
-        <h2>O mně</h2>
-        <h6>Profesně</h6>
-        <p>
-            Jsem Junior Software Developer, který rád pracuje na čemkoli, co má smysl a reálný přínos.
-            Nebojím se nových výzev a rád se učím nové technologie a přístupy.
-            Informatice se věnuji již <span class="study-years"></span> let, během kterých jsem si vybudoval technický základ - jak studiem na Fakultě informačních technologií VUT v Brně, tak i tvorbou vlastních projektů, včetně týmové spolupráce.
-        </p>
-        <h6>Osobně</h6>
-        <p>
-            Jsem ajťák skrz na skrz - vždy mě bavilo vytvářet nové věci a zlepšovat je. 
-            Ať už to byly kresby, modely z Lega, videohry, nebo později software, rád tvořím a hledám způsoby, jak se zlepšovat v tom, co dělám.
-            Už od základní školy jsem věděl, že chci spojit techniku a kreativitu - proto jsem se rozhodl jít cestou IT.
-        </p>
-        <p>
-            Při tvorbě (ať už SW projektů, nebo třeba amatérské truhlařiny) věřím v důležitost dobrého plánu a návrhu.
-            Myslím že otázka "proč?" nebo "k čemu?" je stejně důležitá jako "jak?".
-        </p>
-{% endblock about_me_section_content %}
+{% set about_section_texts = ({
+    "about_me_header":"O mně",
+    "professionally_header":"Profesně",
+    "professionally_content_1":"Jsem Junior Software Developer, který rád pracuje na věcech, které dávají smysl a mají skutečnou hodnotu. Nebojím se nových výzev a rád se učím nové technologie a přístupy.",
+    "professionally_content_2":"Věnuji se informatice již <span class=\"study-years fw-bold text-primary\"></span> let, během kterých jsem si vybudoval silný technický základ, to jak studiem na FIT VUT, tak i prací na osobních projektech.",
+    "personally_header":"Osobně",
+    "personally_content_1":"Jsem technologický nadšenec, který rád tvoří a zlepšuje stávající řešení.",
+    "personally_content_2":"Věřím v dobré plánování a design. Otázky \"proč?\" a \"k čemu?\" jsou stejně důležité jako \"jak?\".",
+}) %}
 
 {# Technologies section #}
-{% block technologies_section_content %}
-        <h2>Technologie a nástroje</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <u>Nejvíce praktických zkušeností mám s: </u>
-                    <ul>
-                        <li>Web aplikace (<b>Flask, Bootstrap, HTML+CSS</b>)</li>
-                        <li>Databáze (<b>SQL - MySQL</b>) </li>
-                        <li>Mini desktop aplikace a skripty (<b>Tkinter, Python</b>)</li>
-                        <li>Síťové a low-level aplikace (<b>C/C++</b>)</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <u>K vývoji používám i další podpůrné nástroje:</u>
-                    <ul>
-                        <li><b>Git & GitHub</b></li>
-                        <li><b>Docker</b></li>
-                        <li><b>Linux (CLI - WSL)</b></li>
-                        <li><b>VSCode</b></li>
-                        <li><b>Latex, Doxygen</b></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <u>Mám menší praktické zkušenosti i s:</u>
-                    <ul>
-                        <li>Webové frameworky - (<b>Django, Vue.js</b>)</li>
-                        <li>Testování (<b>Pytest, Unit testy</b>)</li>
-                        <li>Vývoj pro embedded systémy (<b>Arduino, ESP32</b>)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-{% endblock technologies_section_content %}
+{% set technologies_section_texts = ({
+    "technologies_header":"Technologie a nástroje",
+    "primary_expertise_header":"Hlavní specializace",
+    "web_applications":"Webové aplikace (Flask, Bootstrap, HTML+CSS)",
+    "databases":"Databáze (SQL - MySQL)",
+    "desktop_applications":"Desktopové aplikace (Tkinter, Python)",
+    "networking":"Síťové aplikace (C/C++)",
+    "development_tools_header":"Vývojové nástroje",
+    "additional_experience_header":"Dodatečné zkušenosti",
+}) %}
 
 {# Projects section #}
 {% block projects_section_content %}
@@ -88,33 +54,16 @@
 {% endblock projects_section_content %}
 
 {# Certificates section #}
-{% block certificates_section_content %}
-        <h2>Certifikáty</h2>
-            <p>
-                Angličtina úroveň C2 - Cambridge University English - 
-                <a class="certificate" target="_blank" href="https://www.cambridgeenglish.org/images/177867-the-methodology-behind-the-cambridge-english-scale.pdf">
-                    přehled úrovní
-                </a>
-            </p>
-            <p>
-                <abbr title="Cisco Certified Network Associate">CCNA</abbr> - Routing And Switching - 
-                <a class="certificate" target="_blank" href="https://www.globalknowledge.com/en-qa/certifications/certification-training/cisco/cisco-routing-and-switching/cisco-ccna-routing-and-switching">
-                    přehled certifikace
-                </a>
-            </p>
-            <p>
-                <abbr title="European Computer Driving Licence">ECDL</abbr> - CORE - 
-                <a class="certificate" target="_blank" href="https://www.ecdl.cz/cert_ecdl.php">
-                    přehled certifikace
-                </a>
-            </p>
-{% endblock certificates_section_content %}
+{% set certificates_section_texts = ({
+    "certificates_header":"Certifikace",
+    "view_overview":"Zobrazit přehled",
+    "view_level_overview":"Zobrazit úrovně",
+    "view_certification":"Zobrazit certifikaci",
+}) %}
 
 {# Contacts section #}
-{% block contacts_section_content %}
-        <h2 class="contacts-section" id="contacts-section">Kontakt</h2>
-            <a target="_blank" href="mailto:petaplihal@seznam.cz">E-mail</a>
-            <a target="_blank" href="https://www.linkedin.com/in/petr-plihal">LinkedIn</a>
-            <a target="_blank" href="https://github.com/petr-plihal">GitHub</a>
-            <a target="_blank" href="https://www.facebook.com/petr.plihal.758/">Facebook</a>
-{% endblock contacts_section_content %}
+{% set contacts_section_texts = ({
+    "contacts_header":"Kontakt",
+    "lets_connect":"Pojďme se spojit!",
+    "call_to_action":"Neváhejte mě kontaktovat prostřednictvím kterékoli z těchto platforem",
+}) %}
