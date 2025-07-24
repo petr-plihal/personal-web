@@ -1,0 +1,61 @@
+/* Navbar */
+.navbar {
+    padding: 0.5rem 1rem; /* Top/bottom: 0.5rem, Left/right: 1rem */
+}
+
+/* Navigation links */
+
+.nav-link {
+    display: flex; /* Necessary to format icons with their text into a column for desktop */
+    align-items: center;
+}
+
+.nav-link .bi {
+    font-size: 1.5rem;
+}
+
+/* Active link styles */
+.nav-link.active .bi { /* Content */
+    color: #007bff;
+}
+.nav-link.active .nav-text { /* Text content */
+    color: #007bff;
+}
+.nav-link.active { /* Background */
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 0.375rem;
+}
+
+/* Hover styles */
+.nav-link:hover .bi {
+    color: #0056b3;
+}
+.nav-link:hover .nav-text {
+    color: #0056b3;
+}
+
+
+/* Language switcher centering */
+#navbar-language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Navigation item layout */
+/* Desktop - text under icons */
+@media (min-width: 576px) {
+    .nav-link {
+        flex-direction: column;
+    }
+}
+
+/* Mobile - text next to icons */
+@media (max-width: 575px) {
+    .nav-link {
+        flex-direction: row;
+    }
+    .nav-text {
+        margin-left: 8px;
+    }
+}
