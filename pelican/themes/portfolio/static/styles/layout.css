@@ -4,6 +4,10 @@
 }
 
 .section {
-    min-height: 100vh; /* Each section must take up at least the viewport height */
-    scroll-margin-top: var(--navbar-height); /* Offset for fixed navbar, calculated in `navbar_height.js` */
+    /* WHEN USING NAVIGATION LINK, account for navbar, to avoid hiding part of text, calculated in `navbar_height.js` */
+    scroll-margin-top: var(--navbar-height); 
+}
+
+#home-section {
+    min-height: calc(100vh - var(--navbar-height)); /* Stretch first section to fit exactly to usable space */
 }
