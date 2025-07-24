@@ -91,17 +91,15 @@
                     </div>
                     <div class="text-end ">
                         <i class="bi bi-pin-map"></i>
-                        <a>Brno, Jihomoravský kraj, Česko</a>
+                        <a>{{ home_section_texts["location"] }}</a>
                     </div>
                 </div>
 
-                <p class="fs-5 mb-4">
-                    Jsem softwarový vývojář se zaměřením na Python, C/C++ a webové technologie.
-                </p>
+                <p class="fs-5 mb-4">{{ home_section_texts["brief_about"] }}</p>
 
                 <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
                     {% if language is defined and download_cv_text is defined %}
-                        <a href="plihal_petr_cv_{{ language }}.pdf" download class="btn btn-primary btn-lg me-md-3 mb-2 ">{{ download_cv_text }}</a>
+                        <a href="plihal_petr_cv_{{ language }}.pdf" download class="btn btn-primary btn-lg me-md-3 mb-2 ">{{ home_section_texts["download_cv_text"] }}</a>
                     {% endif %}
 
                     <div class="d-inline-flex">
