@@ -1,0 +1,40 @@
+/* Custom theme switch styling */
+.form-check-input[type="checkbox"]#themeSwitch {
+    /* Size adjustments */
+    width: 3rem;
+    height: 1.5rem;
+    
+    /* Custom colors */
+    background-color: #6c757d;
+    border-color: #6c757d;
+    
+    /* Smooth transitions */
+    transition: all 0.3s ease;
+}
+
+/* When checked (dark mode) */
+.form-check-input[type="checkbox"]#themeSwitch:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Focus state */
+.form-check-input[type="checkbox"]#themeSwitch:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Custom colors for different themes */
+.form-check-input[type="checkbox"]#themeSwitch {
+    /* Light mode: sun colors */
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.form-check-input[type="checkbox"]#themeSwitch:checked {
+    /* Dark mode: moon colors */
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+}
+
