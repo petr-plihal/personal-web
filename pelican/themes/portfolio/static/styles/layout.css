@@ -4,7 +4,7 @@
 }
 
 /* Scrollspy requirement */
-main[data-bs-spy="scroll"] {
+body[data-bs-spy="scroll"] {
     position: relative;
 }
 

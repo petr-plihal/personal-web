@@ -45,9 +45,9 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar">
     {% block navbar %}{% endblock %}
-    <main class="container pb-5" data-bs-spy="scroll" data-bs-target="#mainNavbar">
+    <main class="container pb-5">
         {% block content %}{% endblock %}
     </main>
 </body>
