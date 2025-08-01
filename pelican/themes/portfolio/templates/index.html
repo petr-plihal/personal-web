@@ -44,13 +44,41 @@
 }) %}
 
 {# Projects section #}
-{% block projects_section_content %}
-        <h2>Projects</h2>
-        <div class="projects-container limited" id="projects-container">
+{% set projects = [
+    {
+        "name": "Information System for Art School",
+        "description": "Team project (3 members). Design and implementation of an information system for managing equipment rentals in art school studios. Focus on UX, user management capabilities (roles, permissions, login, registration).",
+        "technologies": ["Flask", "SQL", "MySQL", "HTML", "CSS"],
+        "githubUrl": "https://github.com/petr-plihal/IIS_projekt",
+        "demoUrl": "https://github.com/petr-plihal/IIS_projekt"
+    },
+    {
+        "name": "Web Application for RPG Group Management",
+        "description": "Team project (4 members). Market research, validation of design and final application with real potential customers. Database design and implementation. Backend in Django. Frontend in Vue. Development coordination in Trello. Project documentation in LaTeX.",
+        "technologies": ["Django", "Vue.js", "Trello", "SQL", "MySQL", "LaTeX", "Python"],
+        "githubUrl": "https://github.com/petr-plihal/ttrpg-group-manager",
+    },
+    {
+        "name": "Database for General Practitioner",
+        "description": "Team project (2 members). We designed a relational DB (ERD), then implemented it including test data, triggers, procedures, views and indexes in SQL for Oracle database. For documentation we used LaTeX. I extended the solution with a Dockerfile.",
+        "technologies": ["SQL", "Oracle DB", "LaTeX", "Docker"],
+        "githubUrl": "https://github.com/petr-plihal/doctor-office-db",
+    },
+    {
+        "name": "WiFi Metronome with Web Interface",
+        "description": "Microprocessor application hosting a small web server with interface for a 'metronome' that connects to a given WiFi network. MCU implementation used interrupts, timers, pulse width modulation, input validation. Web interface validated input ranges and prevented issues like double submission during use. The solution includes a user manual for setup and usage.",
+        "technologies": ["C/C++", "HTML", "Arduino", "PlatformIO", "ESP32", "LaTeX"],
+        "githubUrl": "https://github.com/petr-plihal/wifi-metronome",
+    },
+    {
+        "name": "Client Application for Chat Server",
+        "description": "Application for sending and receiving messages from a chat server. Uses sockets and manual TCP packet construction for unencrypted communication with the chat server. Implementation uses OOP with some design patterns.",
+        "technologies": ["C/C++", "Wireshark"],
+        "githubUrl": "https://github.com/petr-plihal/chat-client-ipk25",
+    },
+] %}
 
-            <div class="projects-fade"></div>
-        </div>
-        <button id="show-all-projects">Show All</button>
+{% block projects_section_content %}
 {% endblock projects_section_content %}
 
 {# Certificates section #}
