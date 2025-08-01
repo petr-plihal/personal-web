@@ -4,7 +4,7 @@
 import os
 import sys
 
-sys.path.append(os.curdir)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))) # Add directory to path to allow access to pelicanconf.py
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
