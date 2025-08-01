@@ -7,3 +7,6 @@ node_modules
 venv
 # Cache files
 **/__pycache__
+
+# Ignore generated files (will later be included with github actions)
+docs
