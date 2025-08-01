@@ -25,14 +25,34 @@
     <!-- CSS -->
 
     <!-- Google tag (gtag.js) -->
+    {% if GOOGLE_ANALYTICS_ID %}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWF3EXGP99"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date()); 
             
-            gtag('config', 'G-QWF3EXGP99');
+            gtag('config', '{{ GOOGLE_ANALYTICS_ID }}');
+
+            function trackCVDownload(language) {
+                gtag('event', 'cv_download', {
+                    event_category: 'engagement',
+                    event_label: language,
+                    language: language,
+                    value: 10
+                });
+            }
+
+            function trackContact(platform) {
+                gtag('event', 'contact_attempt', {
+                    event_category: 'conversion',
+                    event_label: platform,
+                    platform: platform,
+                    value: 5
+                });
+            }
         </script>
+    {% endif %}
     <!-- Google tag (gtag.js) -->
 
     <!-- Favicons -->
