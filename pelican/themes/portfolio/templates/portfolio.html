@@ -4,10 +4,13 @@
     | Software Developer
 {% endblock %}
 
+{% block js %}
+    <script src="{{ SITEURL }}/theme/javascript/projects_collapse_button.js"></script>
+{% endblock %}
+
 {% block css %}
     <link rel="stylesheet" href="{{ SITEURL }}/theme/styles/layout.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/styles/navbar.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/styles/projects.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/styles/socials.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/styles/color_mode_switch.css">
 {% endblock %}
@@ -222,44 +225,51 @@
         <div class="container">
             <h2 class="text-center mb-4">{{ sections_titles["projects"] }}</h2>
             
-            <div class="projects-container limited" id="projects-container">
-                <div class="row g-4">
-                    {% for project in projects %}
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ project.name }}</h5>
-                                <p class="card-text">{{ project.description }}</p>
-                                <div class="technologies mb-3">
-                                    {% for tech in project.technologies %}
-                                        <span class="badge bg-secondary me-1 mb-1">{{ tech }}</span>
-                                    {% endfor %}
-                                </div>
-                                <div class="d-flex gap-2">
-                                    {% if project.githubUrl %}
-                                        <a href="{{ project.githubUrl }}" target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-github me-1"></i>GitHub
-                                        </a>
-                                    {% endif %}
-                                    {% if project.demoUrl %}
-                                        <a href="{{ project.demoUrl }}" target="_blank" class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-play-circle me-1"></i>Demo
-                                        </a>
-                                    {% endif %}
-                                </div>
+            <div class="row g-4">
+                {% for project in projects %}
+                <div class="col-lg-6 mb-4{% if loop.index > 2 %} collapse project-collapse{% endif %}">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+
+                            <h5 class="card-title">{{ project.name }}</h5>
+                            <p class="card-text">{{ project.description }}</p>
+
+                            <div class="technologies mb-3">
+                                {% for tech in project.technologies %}
+                                    <span class="badge bg-secondary me-1 mb-1">{{ tech }}</span>
+                                {% endfor %}
                             </div>
+
+                            <div class="d-flex gap-2">
+                                {% if project.githubUrl %}
+                                    <a href="{{ project.githubUrl }}" target="_blank" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-github me-1"></i>GitHub
+                                    </a>
+                                {% endif %}
+
+                                {% if project.demoUrl %}
+                                    <a href="{{ project.demoUrl }}" target="_blank" class="btn btn-outline-success btn-sm">
+                                        <i class="bi bi-play-circle me-1"></i>Demo
+                                    </a>
+                                {% endif %}
+                            </div>
+
                         </div>
                     </div>
-                    {% endfor %}
                 </div>
-                <div class="projects-fade"></div>
+                {% endfor %}
             </div>
+
+            {% if projects|length > 2 %}
             <div class="text-center">
-                <button id="show-all-projects" class="btn btn-primary">Show All Projects</button>
+                <button id="show-all-projects" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".project-collapse" aria-expanded="false" aria-controls="project-collapse">
+                    <span class="show-text">{{ projects_section_texts["show_projects"] }}</span>
+                    <span class="hide-text d-none">{{ projects_section_texts.get("hide_projects", "Show less") }}</span>
+                </button>
             </div>
+            {% endif %}
         </div>
     </div>
-    <script src="{{ SITEURL }}/theme/javascript/projects_gen.js"></script>
 
     <div class="section mb-5 py-4" id="certificates-section">
         <div class="container">

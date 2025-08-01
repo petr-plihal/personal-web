@@ -77,8 +77,10 @@
     },
 ] %}
 
-{% block projects_section_content %}
-{% endblock projects_section_content %}
+{% set projects_section_texts = ({
+    "show_projects":"Show more",
+    "hide_projects":"Show less",
+}) %}
 
 {# Certificates section #}
 {% set certificates_section_texts = ({

@@ -77,8 +77,10 @@
     },
 ] %}
 
-{% block projects_section_content %}
-{% endblock projects_section_content %}
+{% set projects_section_texts = ({
+    "show_projects":"Zobrazit více",
+    "hide_projects":"Skrýt",
+}) %}
 
 {# Certificates section #}
 {% set certificates_section_texts = ({
