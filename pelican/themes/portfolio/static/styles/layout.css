@@ -3,6 +3,11 @@
     --navbar-height: 80px; /* Fallback value, in case `navbar_height.js` */
 }
 
+/* Scrollspy requirement */
+main[data-bs-spy="scroll"] {
+    position: relative;
+}
+
 .section {
     /* WHEN USING NAVIGATION LINK, account for navbar, to avoid hiding part of text, calculated in `navbar_height.js` */
     scroll-margin-top: var(--navbar-height); 
