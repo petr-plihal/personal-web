@@ -9,6 +9,6 @@ jobs:
       pages: "write"
       id-token: "write"
     with:
-      settings: "pelican/pelicanconf.py"
+      settings: "pelican/publishconf.py"
       requirements: "-r requirements.txt"
       python: "3.10.12"
