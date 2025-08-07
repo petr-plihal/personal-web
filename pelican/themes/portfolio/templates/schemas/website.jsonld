@@ -14,11 +14,6 @@
         "@type": "ViewAction",
         "name": "View Portfolio",
         "target": "{{ SITEURL }}/#projects-section"
-    },
-    {
-        "@type": "ContactAction",
-        "name": "Contact",
-        "target": "mailto:contact@petr-plihal.eu"
     }
     ]
 }
