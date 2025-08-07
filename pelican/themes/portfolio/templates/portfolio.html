@@ -4,6 +4,11 @@
     | Software Developer
 {% endblock %}
 
+{% block meta %}
+    <meta name="description" content="{{ meta_tags['description_content'] }}">
+    <meta name="author" content="Petr Plíhal">
+{% endblock meta %}
+
 {% block js %}
     <script src="{{ SITEURL }}/theme/javascript/projects_collapse_button.js"></script>
 {% endblock %}
