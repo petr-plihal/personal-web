@@ -1,0 +1,24 @@
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Petr Plíhal",
+    "url": "{{ SITEURL }}",
+    "description": "{{ meta_tags['description_content'] }}",
+    "author": {
+        "@type": "Person",
+        "name": "Petr Plíhal"
+  },
+    "inLanguage": ["en", "cs"],
+    "potentialAction": [
+    {
+        "@type": "ViewAction",
+        "name": "View Portfolio",
+        "target": "{{ SITEURL }}/#projects-section"
+    },
+    {
+        "@type": "ContactAction",
+        "name": "Contact",
+        "target": "mailto:contact@petr-plihal.eu"
+    }
+    ]
+}

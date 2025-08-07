@@ -7,6 +7,13 @@
 {% block meta %}
     <meta name="description" content="{{ meta_tags['description_content'] }}">
     <meta name="author" content="Petr Plíhal">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">[
+        {% include 'schemas/person.jsonld' %},
+        {% include 'schemas/website.jsonld' %}
+    ]</script>
+    <!-- Structured Data -->
 {% endblock meta %}
 
 {% block js %}

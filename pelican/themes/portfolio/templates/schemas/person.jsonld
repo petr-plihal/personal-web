@@ -1,0 +1,95 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Petr Plíhal",
+    "givenName": "Petr",
+    "familyName": "Plíhal",
+    "jobTitle": "Full-stack Software Developer",
+    "description": "Full-stack software developer with a focus on Python and web technologies. I build applications using the   Flask and Bootstrap frameworks and have experience with C/C++, SQL, and JavaScript. Based in Brno, Czech Republic.",
+    "email": "contact@petr-plihal.eu",
+    "url": "https://petr-plihal.eu",
+    "sameAs": [
+        "https://www.linkedin.com/in/petr-plihal",
+        "https://github.com/petr-plihal"
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brno",
+        "addressRegion": "South Moravia",
+        "addressCountry": "Czech Republic"
+    },
+    "nationality": "Czech Republic",
+    "knowsLanguage": [
+        {
+            "@type": "Language",
+            "name": "English"
+        },
+        {
+            "@type": "Language", 
+            "name": "Czech"
+        }
+    ],
+    "skills": [
+        "Python",
+        "Flask",
+        "C/C++",
+        "SQL",
+        "MySQL",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Django",
+        "Vue.js",
+        "Git",
+        "GitHub",
+        "Docker",
+        "Linux",
+        "Arduino",
+        "ESP32",
+        "LaTeX",
+        "Pytest",
+        "Unit Testing"
+    ],
+    "hasCertification": [
+        {
+            "@type": "Certification",
+            "name": "Cambridge University English - Level C2",
+            "description": "English Proficiency Certification"
+        },
+        {
+            "@type": "Certification", 
+            "name": "CCNA",
+            "description": "Cisco Certified Network Associate - Routing And Switching"
+        },
+        {
+            "@type": "Certification",
+            "name": "ECDL CORE",
+            "description": "European Computer Driving Licence - CORE"
+        }
+    ],
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "FIT BUT",
+        "description": "Faculty of Information Technology, Brno University of Technology"
+    },
+    "knowsAbout": [
+        "Software Development",
+        "Software Engineering",
+        "Web Development",
+        "Full-stack Development", 
+        "Database Design",
+        "Programming",
+        "Network Programming",
+        "Embedded Systems"
+    ],
+    "workLocation": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Brno",
+            "addressRegion": "South Moravia", 
+            "addressCountry": "Czech Republic"
+        }
+    }
+}
