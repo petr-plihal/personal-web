@@ -5,8 +5,11 @@
 
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block meta %}{% endblock meta %}
+    <!-- Meta tags -->
 
     <!-- JavaScript -->
         <script src="{{ SITEURL }}/theme/javascript/color_mode.js"></script>
