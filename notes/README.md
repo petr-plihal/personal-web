@@ -8,3 +8,5 @@ Basically anything that does not belong into a project README, but is too import
 The favicons are generated with [this](https://realfavicongenerator.net/) page. They are stored at `/media/icons/favicon/`.
 
 [Purpose](https://webflow.com/blog/favicon-guide) of these generated icons should be to increase accessability by providing multiple sizes of web favicon.
+
+The `.ico` files can be checked for sizes of icons that are contained in that file with [this online tool](https://redketchup.io/).
