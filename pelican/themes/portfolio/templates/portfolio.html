@@ -30,6 +30,27 @@
 {% block navbar %}
     <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top" id="mainNavbar">
 
+        <div class="order-sm-last d-flex align-items-center justify-content-center">
+            <!-- Language switcher -->
+            <div class="dropdown" id="navbar-language-switcher">
+                <button class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <span class="nav-text">{{ language|upper }}</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{{ SITEURL }}/">EN</a></li>
+                    <li><a class="dropdown-item" href="{{ SITEURL }}/index-cs.html">CS</a></li>
+                </ul>
+            </div>
+            <!-- Language switcher -->
+    
+            <!-- Color theme switcher -->
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" data-theme-toggle>
+            </div>
+            <!-- Color theme switcher -->
+        
+        </div>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -72,26 +93,6 @@
                         <span class="nav-text">{{ sections_titles["contacts"] }}</span>
                     </a>
                 </li>
-
-                <!-- Language switcher -->
-                <li class="nav-item dropdown" id="navbar-language-switcher">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        <span class="nav-text">{{ language|upper }}</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ SITEURL }}/">EN</a></li>
-                        <li><a class="dropdown-item" href="{{ SITEURL }}/index-cs.html">CS</a></li>
-                    </ul>
-                </li>
-                <!-- Language switcher -->
-
-                <!-- Color theme switcher -->
-                <li class="nav-item d-flex align-items-center justify-content-center">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" data-theme-toggle>
-                    </div>
-                </li>
-
             </ul>
         </div>
     </nav>
