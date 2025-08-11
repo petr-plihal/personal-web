@@ -38,10 +38,10 @@ DEFAULT_PAGINATION = False
 DELETE_OUTPUT_DIRECTORY = True
 
 # Include special files
-STATIC_PATHS = ['extra/CNAME', 'extra/favicon.svg', 'extra/plihal_petr_cv_cs.pdf', 'extra/plihal_petr_cv_en.pdf']
+STATIC_PATHS = ['extra/CNAME', 'extra/favicon.ico', 'extra/plihal_petr_cv_cs.pdf', 'extra/plihal_petr_cv_en.pdf']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/favicon.svg': {'path': 'favicon.svg'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/plihal_petr_cv_cs.pdf': {'path': 'plihal_petr_cv_cs.pdf'},
     'extra/plihal_petr_cv_en.pdf': {'path': 'plihal_petr_cv_en.pdf'},
 }
