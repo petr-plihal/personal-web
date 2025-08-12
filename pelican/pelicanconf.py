@@ -34,6 +34,9 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = False
 
+# Take "date" metadata from file system, if no "date" tag is specified in the article/page as metadata (E.g. "Date: 1/1/2000").
+DEFAULT_DATE = "fs"
+
 # ! Delete contents before generating, to avoid older unused files from persisting
 DELETE_OUTPUT_DIRECTORY = True
 
@@ -51,8 +54,6 @@ DIRECT_TEMPLATES = ['index', 'index-cs']  # Only generate index.html
 PAGINATED_TEMPLATES = {}      # No pagination
 
 # Disable article-related pages since you're not using articles yet
-ARTICLE_SAVE_AS = ''
-ARTICLE_URL = ''
 DRAFT_SAVE_AS = ''
 DRAFT_URL = ''
 AUTHOR_SAVE_AS = ''
@@ -62,6 +63,10 @@ ARCHIVES_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
 CATEGORIES_SAVE_AS = ''
 TAGS_SAVE_AS = ''
+# ARTICLE_URL = 'posts/{slug}.html'
+# ARTICLE_SAVE_AS = 'posts/{slug}.html'
+# ARTICLE_LANG_URL = '{lang}/posts/{slug}.html'
+# ARTICLE_LANG_SAVE_AS = '{lang}/posts/{slug}.html'
 
 # Multilingual support - using Pelican's built-in features
 DEFAULT_LANG = 'en'
@@ -70,6 +75,15 @@ DEFAULT_LANG = 'en'
 LANGUAGES = {
     'en': 'English',
     'cs': 'Čeština'
+}
+# mapping: language_code -> settings_overrides_dict
+I18N_SUBSITES = {
+    'cs': {
+    # 'SITENAME': 'Český web',
+    }
+}
+JINJA_ENVIRONMENT = {
+'extensions': ['jinja2.ext.i18n'],
 }
 
 

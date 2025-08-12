@@ -19,6 +19,7 @@ The hosting is done with [GitHub Pages](https://pages.github.com/) using my owne
 
 - `npm` package manager - for generating Bootstrap files
 - Python - for virtual environment and Pelican
+- `gettext` package - for generating message catalog files (`*.po`, `*mo`), if they aren't already, or in case of changes
 
 ### Setup
 
