@@ -71,11 +71,7 @@ TAGS_SAVE_AS = ''
 # Multilingual support - using Pelican's built-in features
 DEFAULT_LANG = 'en'
 
-# Available languages  
-LANGUAGES = {
-    'en': 'English',
-    'cs': 'Čeština'
-}
+
 # mapping: language_code -> settings_overrides_dict
 I18N_SUBSITES = {
     'cs': {
