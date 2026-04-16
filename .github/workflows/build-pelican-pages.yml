@@ -10,5 +10,6 @@ jobs:
       id-token: "write"
     with:
       settings: "pelican/publishconf.py"
+      siteurl: "https://petr-plihal.eu"
       requirements: "-r requirements.txt"
       python: "3.10.12"
